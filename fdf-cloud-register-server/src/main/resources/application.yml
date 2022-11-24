@@ -1,2 +1,6 @@
 server:
-  port: 8084
+  port: 8848
+fdf:
+  cloud:
+    server-address: http://127.0.0.1:8848
+    service-name: order
