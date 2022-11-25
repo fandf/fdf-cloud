@@ -6,5 +6,5 @@ package com.fdf.constant;
  */
 public class RegisterConstant {
     public static final int RESULT_OK = 200;
-    public static final int RESULT_FAIL = -1;
+    public static final int RESULT_FAIL = 500;
 }

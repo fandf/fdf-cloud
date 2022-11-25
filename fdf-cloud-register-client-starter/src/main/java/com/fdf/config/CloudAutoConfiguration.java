@@ -1,5 +1,6 @@
 package com.fdf.config;
 
+import com.fdf.callback.CloseCallbackImpl;
 import com.fdf.service.RegisterClientService;
 import com.fdf.start.ApplicationRunnerImpl;
 import org.springframework.context.annotation.Bean;
@@ -38,6 +39,11 @@ public class CloudAutoConfiguration {
     @Bean
     public RegisterClientService registerClientService() {
         return new RegisterClientService();
+    }
+
+    @Bean
+    public CloseCallbackImpl closeCallbackImpl() {
+        return new CloseCallbackImpl();
     }
 
 }

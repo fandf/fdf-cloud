@@ -24,15 +24,33 @@ public class RegisterService extends BaseService {
     @Resource
     RegisterContainer registerContainer;
 
-
+    /**
+     * 注册
+     * @param reqInfoDTO
+     * @return
+     */
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody ReqInfoDTO reqInfoDTO) {
         return setResult(registerContainer.put(reqInfoDTO));
     }
 
+    /**
+     * 查询活跃的服务
+     * @return
+     */
     @GetMapping("/activeService")
     public Map<String, HashSet<ServiceInstance>> activeService() {
         return registerContainer.getMapAddress();
+    }
+
+    /**
+     * 正常宕机调用剔除服务接口
+     * @param reqInfoDTO
+     * @return
+     */
+    @PostMapping("/remove")
+    public ResponseEntity unRegister(@RequestBody ReqInfoDTO reqInfoDTO) {
+        return setResult(registerContainer.remove(reqInfoDTO) != null);
     }
 
 }
