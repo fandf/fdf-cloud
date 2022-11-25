@@ -1,7 +1,6 @@
 package com.fdf.callback;
 
 import com.fdf.service.RegisterClientService;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.ApplicationListener;
