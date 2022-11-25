@@ -2,6 +2,7 @@ package com.fdf.config;
 
 import com.fdf.callback.CloseCallbackImpl;
 import com.fdf.service.RegisterClientService;
+import com.fdf.service.RenewalService;
 import com.fdf.start.ApplicationRunnerImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -44,6 +45,11 @@ public class CloudAutoConfiguration {
     @Bean
     public CloseCallbackImpl closeCallbackImpl() {
         return new CloseCallbackImpl();
+    }
+
+    @Bean
+    public RenewalService renewalService() {
+        return new RenewalService();
     }
 
 }

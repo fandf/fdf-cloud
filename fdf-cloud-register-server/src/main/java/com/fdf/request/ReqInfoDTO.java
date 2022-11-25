@@ -20,8 +20,8 @@ public class ReqInfoDTO {
      */
     private String serviceName;
     /**
-     * 续约时长
+     * 续约时长(毫秒)  客户端传 自定义续约时间
      */
-    private String renewalDuration;
+    private Long renewalDuration;
 
 }

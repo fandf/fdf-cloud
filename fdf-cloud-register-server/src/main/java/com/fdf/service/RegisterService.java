@@ -26,6 +26,7 @@ public class RegisterService extends BaseService {
 
     /**
      * 注册
+     *
      * @param reqInfoDTO
      * @return
      */
@@ -36,6 +37,7 @@ public class RegisterService extends BaseService {
 
     /**
      * 查询活跃的服务
+     *
      * @return
      */
     @GetMapping("/activeService")
@@ -44,7 +46,19 @@ public class RegisterService extends BaseService {
     }
 
     /**
+     * 服务续约接口
+     *
+     * @return
+     */
+    @PostMapping("/renewal")
+    public ResponseEntity renewal(@RequestBody ReqInfoDTO dto) {
+        return setResult(registerContainer.renewal(dto));
+    }
+
+
+    /**
      * 正常宕机调用剔除服务接口
+     *
      * @param reqInfoDTO
      * @return
      */
