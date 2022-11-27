@@ -9,8 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>fdf-cloud-register-server</module>
-        <module>fdf-cloud-register-client-starter</module>
+        <module>register-server</module>
+        <module>register-client-starter</module>
+        <module>config-server</module>
+        <module>config-client-starter</module>
     </modules>
 
     <properties>

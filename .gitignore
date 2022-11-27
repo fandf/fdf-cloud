@@ -25,3 +25,5 @@ hs_err_pid*
 /fdf-cloud-register-server/fdf-cloud-register-server.iml
 /fdf-cloud-register-client/fdf-cloud-register-client.iml
 /fdf-cloud-register-client-starter/fdf-cloud-register-client-starter.iml
+/config-server/config-server.iml
+/config-client-starter/config-client-starter.iml
