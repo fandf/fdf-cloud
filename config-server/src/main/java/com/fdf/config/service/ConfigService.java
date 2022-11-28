@@ -20,4 +20,5 @@ public class ConfigService extends ServiceImpl<ConfigMapper, ConfigEntity> {
         wrapper.last("limit 1");
         return getOne(wrapper);
     }
+
 }

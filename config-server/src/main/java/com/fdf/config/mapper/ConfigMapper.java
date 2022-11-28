@@ -2,7 +2,10 @@ package com.fdf.config.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.fdf.config.entity.ConfigEntity;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * @author fandongfeng
@@ -10,4 +13,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ConfigMapper extends BaseMapper<ConfigEntity> {
+
 }

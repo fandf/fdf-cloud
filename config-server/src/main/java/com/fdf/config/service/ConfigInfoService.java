@@ -3,6 +3,7 @@ package com.fdf.config.service;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fdf.config.entity.ConfigInfoEntity;
+import com.fdf.config.entity.ConfigUnionEntity;
 import com.fdf.config.mapper.ConfigInfoMapper;
 import org.springframework.stereotype.Service;
 
@@ -19,5 +20,9 @@ public class ConfigInfoService extends ServiceImpl<ConfigInfoMapper, ConfigInfoE
         LambdaQueryWrapper<ConfigInfoEntity> wrap = new LambdaQueryWrapper<>();
         wrap.eq(ConfigInfoEntity::getConfigId, configId);
         return list(wrap);
+    }
+
+    public List<ConfigUnionEntity> configList() {
+        return this.baseMapper.configList();
     }
 }
