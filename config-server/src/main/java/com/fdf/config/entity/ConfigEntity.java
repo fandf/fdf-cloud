@@ -19,6 +19,9 @@ public class ConfigEntity extends Model<ConfigEntity> {
     @TableId(type = IdType.AUTO)
     private Long id;
     private String name;
+    /**
+     * 比较内容是否发生变化
+     */
     private String md5;
 
 }

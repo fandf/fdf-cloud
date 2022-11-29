@@ -105,7 +105,7 @@ public class ConfigController extends BaseService {
     }
 
     /**
-     * http://127.0.0.1:8099/updateConfig?id=1&value=yushengjun644 修改配置文件内容
+     * http://127.0.0.1:8099/updateConfig?id=1&value=fandf 修改配置文件内容
      *
      * @param id
      * @param value

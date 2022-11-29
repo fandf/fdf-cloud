@@ -5,7 +5,7 @@ spring:
   application:
     name: config-server
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/fdf-cloud?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/fdf?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
